@@ -1,0 +1,19 @@
+<h3>Form tạo mới</h3>
+<form [formGroup]="bookForm" (ngSubmit)='createBook()'>
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" formControlName="title"></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><input type="text" formControlName="author"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea style="height: 150px; width: 350px;" type="text" formControlName="description"></textarea></td>
+        </tr>
+        <td><button type="submit"> Tạo mới </button></td>
+        <td><button routerLink='' >Thoát</button></td>
+    </table>
+</form>
